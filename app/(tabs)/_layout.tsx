@@ -1,44 +1,123 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
-import { Platform } from 'react-native';
+import { Tabs } from "expo-router";
+import AntDesign from '@expo/vector-icons/AntDesign';
+import { StyleSheet } from 'react-native';
 
-import { HapticTab } from '@/components/HapticTab';
-import { IconSymbol } from '@/components/ui/IconSymbol';
-import TabBarBackground from '@/components/ui/TabBarBackground';
-import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
-
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
+export default function TabsLayout() {
+  const tabBarOptions = {
+    headerShown: true,
+    tabBarActiveTintColor: 'black',
+    tabBarInactiveTintColor: 'white',
+    tabBarStyle: {
+      backgroundColor: '#FF69B4',
+      height: 100,
+      paddingBottom: 10,
+      paddingTop: 10,
+      borderTopWidth: 0,
+      elevation: 15,
+      shadowColor: '#fff',
+      shadowOffset: { width: 0, height: 5 },
+      shadowOpacity: 0.1,
+      shadowRadius: 10,
+    },
+    tabBarLabelStyle: {
+      fontSize: 12,
+      fontWeight: '500' as const,
+      marginBottom: 5,
+    },
+    tabBarItemStyle: {
+      padding: 5,
+    },
+  };
 
   return (
-    <Tabs
-      screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
-        tabBarButton: HapticTab,
-        tabBarBackground: TabBarBackground,
-        tabBarStyle: Platform.select({
-          ios: {
-            // Use a transparent background on iOS to show the blur effect
-            position: 'absolute',
-          },
-          default: {},
-        }),
-      }}>
-      <Tabs.Screen
-        name="index"
+    <Tabs screenOptions={tabBarOptions}>
+      <Tabs.Screen 
+        name="index" 
         options={{
           title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
-        }}
+          headerTitle: 'Home',
+          headerTitleAlign: 'center',
+          headerTitleStyle: {
+            fontWeight: 'bold' as const,
+            fontSize: 20,
+          },
+          headerStyle: {
+            backgroundColor: '#fff',
+            elevation: 0,
+            shadowOpacity: 0,
+            borderBottomWidth: 1,
+            borderBottomColor: '#f0f0f0',
+          },
+          tabBarIcon: ({ color }) => (
+            <AntDesign name="home" size={24} color={color} />
+          ),
+        }} 
       />
-      <Tabs.Screen
-        name="explore"
+      <Tabs.Screen 
+        name="cart" 
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
-        }}
+          title: 'Cart',
+          headerTitle: 'My Cart',
+          headerTitleAlign: 'center',
+          headerTitleStyle: {
+            fontWeight: 'bold' as const,
+            fontSize: 20,
+          },
+          headerStyle: {
+            backgroundColor: '#fff',
+            elevation: 0,
+            shadowOpacity: 0,
+            borderBottomWidth: 1,
+            borderBottomColor: '#f0f0f0',
+          },
+          tabBarIcon: ({ color }) => (
+            <AntDesign name="shoppingcart" size={24} color={color} />
+          ),
+        }} 
+      />
+      <Tabs.Screen 
+        name="setting" 
+        options={{
+          title: 'Settings',
+          headerTitle: 'Settings',
+          headerTitleAlign: 'center',
+          headerTitleStyle: {
+            fontWeight: 'bold' as const,
+            fontSize: 20,
+          },
+          headerStyle: {
+            backgroundColor: '#fff',
+            elevation: 0,
+            shadowOpacity: 0,
+            borderBottomWidth: 1,
+            borderBottomColor: '#f0f0f0',
+          },
+          tabBarIcon: ({ color }) => (
+            <AntDesign name="setting" size={24} color={color} />
+          ),
+        }} 
+      />
+      <Tabs.Screen 
+        name="profile" 
+        options={{
+          title: 'Profile',
+          headerTitle: 'Profile',
+          headerTitleAlign: 'center',
+          headerTitleStyle: {
+            fontWeight: 'bold' as const,
+            fontSize: 20,
+          },
+          headerStyle: {
+            backgroundColor: '#fff',
+            elevation: 0,
+            shadowOpacity: 0,
+            borderBottomWidth: 1,
+            borderBottomColor: '#f0f0f0',
+          },
+          tabBarIcon: ({ color }) => (
+            <AntDesign name="user" size={24} color={color} />
+          ),
+        }} 
       />
     </Tabs>
   );
