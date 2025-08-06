@@ -5,14 +5,14 @@ A modern e-commerce mobile application built with Expo and React Native, featuri
 ## 📱 App Screens
 
 ### Home Screen
-<img width="300" height="600" alt="Screenshot 2025-08-06 115035" src="https://github.com/user-attachments/assets/243c8924-8e22-40f0-964c-93a54866ace6" />
+<img width="300" height="600" alt="Screenshot 2025-08-06 115035" src="https://github.com/user-attachments/assets/243c8924-8e22-40f0-964c-93a54866ace6" /> <br />
 - Displays featured products in a grid layout
 - Shows product images, names, and prices
 - Quick add to cart functionality
 - Clean and intuitive user interface
 
 ### Product Details
-<img width="300" height="600" alt="Screenshot 2025-08-06 115044" src="https://github.com/user-attachments/assets/3895907f-ead6-40ab-944b-d9452b44a9c5" />
+<img width="300" height="600" alt="Screenshot 2025-08-06 115044" src="https://github.com/user-attachments/assets/3895907f-ead6-40ab-944b-d9452b44a9c5" /> <br />
 - Detailed product view with high-quality images
 - Product description and specifications
 - Price and discount information
@@ -20,7 +20,7 @@ A modern e-commerce mobile application built with Expo and React Native, featuri
 - Color and size selection
 
 ### Cart Screen
-<img width="300" height="600" alt="Screenshot 2025-08-06 115014" src="https://github.com/user-attachments/assets/0698df01-acd7-4631-b57c-460648ea7be7" />
+<img width="300" height="600" alt="Screenshot 2025-08-06 115014" src="https://github.com/user-attachments/assets/0698df01-acd7-4631-b57c-460648ea7be7" /> <br />
 - Displays selected items with thumbnails
 - Quantity adjustment controls
 - Price summary with subtotal and discounts
