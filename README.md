@@ -1,50 +1,107 @@
-# Welcome to your Expo app 👋
+# E-Commerce Mobile App with Expo
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern e-commerce mobile application built with Expo and React Native, featuring product browsing, cart management, and user profile functionality.
 
-## Get started
+## 📱 App Screens
 
-1. Install dependencies
+### Home Screen
+<img width="300" height="600" alt="Screenshot 2025-08-06 115035" src="https://github.com/user-attachments/assets/243c8924-8e22-40f0-964c-93a54866ace6" />
+- Displays featured products in a grid layout
+- Shows product images, names, and prices
+- Quick add to cart functionality
+- Clean and intuitive user interface
 
+### Product Details
+<img width="300" height="600" alt="Screenshot 2025-08-06 115044" src="https://github.com/user-attachments/assets/3895907f-ead6-40ab-944b-d9452b44a9c5" />
+- Detailed product view with high-quality images
+- Product description and specifications
+- Price and discount information
+- Add to cart and favorite options
+- Color and size selection
+
+### Cart Screen
+<img width="300" height="600" alt="Screenshot 2025-08-06 115014" src="https://github.com/user-attachments/assets/0698df01-acd7-4631-b57c-460648ea7be7" />
+- Displays selected items with thumbnails
+- Quantity adjustment controls
+- Price summary with subtotal and discounts
+- Proceed to checkout button
+
+## 🛠 Features
+
+- **Product Catalog**: Browse through various products with images and details
+- **Shopping Cart**: Add/remove items and adjust quantities
+- **Responsive Design**: Optimized for both mobile and tablet screens
+- **Modern UI**: Clean and intuitive user interface
+- **Product Filtering**: Sort and filter products by categories
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v16 or later)
+- npm or yarn
+- Expo Go app (for testing on physical devices)
+
+### Installation
+
+1. Clone the repository
    ```bash
-   npm install
+   git clone https://github.com/yourusername/ecommerce-app.git
+   cd ecommerce-app
    ```
 
-2. Start the app
+2. Install dependencies
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
+3. Start the development server
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. Run the app
+   - Press `a` for Android emulator
+   - Press `i` for iOS simulator
+   - Scan the QR code with Expo Go (Android) or Camera app (iOS)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🛠 Tech Stack
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **Framework**: Expo (React Native)
+- **Navigation**: React Navigation
+- **State Management**: React Context API
+- **UI Components**: Custom components with React Native
+- **Styling**: StyleSheet
+- **Icons**: Custom icon set
 
-## Get a fresh project
+## 📂 Project Structure
 
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+ecommerce-app/
+├── app/
+│   ├── (tabs)/
+│   │   ├── index.tsx     # Home screen
+│   │   ├── cart.tsx      # Cart screen
+│   │   └── profile.tsx   # User profile
+├── components/           # Reusable components
+├── constants/            # App constants
+├── context/              # State management
+├── assets/               # Images and fonts
+├── app.json              # Expo configuration
+└── package.json          # Project dependencies
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🤝 Contributing
 
-## Learn more
+Contributions are always welcome! Please follow these steps:
 
-To learn more about developing your project with Expo, look at the following resources:
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 📄 License
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
